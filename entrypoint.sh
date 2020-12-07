@@ -19,5 +19,6 @@ exec /usr/bin/pypi-server \
     --port ${PYPI_PORT} \
     --passwords "${PYPI_PASSWD_FILE}" \
     --authenticate "${PYPI_AUTHENTICATE}" \
+    --log-file /var/log/pypi.log
     ${_extra} \
     "${PYPI_ROOT}"
